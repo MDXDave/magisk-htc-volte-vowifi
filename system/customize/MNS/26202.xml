@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<carrier_config_list>
+    <!-- VDF DE -->
+    <carrier_config>
+        <!--UT TA-->
+        <boolean name="utForbiddenWhenVolteSwitchOff" value="false"/>
+        <int name="utUseApn" value="3"/>
+        <boolean name="CFNRcChangeWithCFNL" value="false"/>
+        <int name="callWaitingMode" value="11"/>
+        <int name="utBsfPort" value="80"/>
+        <string name="utParamsCfg">0:1,1:1,2:1,3:1</string>
+        <int name="utOIRSourceMode" value="1"/>
+        <!--VOLTE TA-->
+        <!-- Volte UI -->
+        <string name="carrier_volte_hd_icon_flag">00000000</string>
+        <boolean name="carrier_volte_show_switch_bool" value="false"/>
+        <!--VOWIFI TA-->
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false"/>
+        <string name="vowifiHplmnListItem">26202, epdg.epc.mnc002.mcc262.pub.3gppnetwork.org</string>
+        <string name="Ikev2EncAlg">RCT_ALG_AES128_CBC</string>
+        <string name="Ikev2PrfAlg">RCT_ALG_HMAC_SHA1</string>
+        <string name="Ikev2HashAlg">RCT_ALG_HMAC_SHA1</string>
+        <string name="Ikev2DhGroup">RCT_ALG_MODP2048</string>
+        <string name="EspEncAlg">RCT_ALG_AES256_CBC</string>
+        <string name="EspAuthAlg">RCT_ALG_AES_XCBC</string>
+        <int name="vowifiRoamingConfig" value="0"/>
+        <boolean name="vowifiStaticUnroaming" value="true"/>
+        <boolean name="vowifiStaticRoaming" value="true"/>
+        <string name="wfc_spn_string">Vodafone</string>
+        <string name="wfc_format_wifi_string">%1$s WiFi Calling</string>
+        <!-- BEGIN   AR0004KNPF,Modified by liuxiangning 00245508, 2016/11/04-->
+        <!--RCS config begin -->
+        <string name="huawei_rcs_enabler">true</string>
+        <string name="ims_ip">72.10.10.10</string>
+        <string name="ims_port">5060</string>
+        <string name="ims_domain">prepro.rcse.ims.vodafone.es</string>
+        <string name="hw_rcs_version">1</string>
+        <string name="CONFIG_SESSION_REFRESH_METHOD">1</string>
+        <!--RCS config end -->
+        <!-- END   AR0004KNPF,Modified by liuxiangning 00245508, 2016/11/04-->
+    </carrier_config>
+</carrier_config_list>

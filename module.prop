@@ -1,0 +1,7 @@
+id=htc-volte-vowifi
+name=VoLTE/VoWIFI for HTC U11/U12+
+version=v1
+versionCode=1
+author=MDXDave
+description=Enables VoLTE/VoWIFI for German providers (DT/VF/O2)
+minMagisk=17000
