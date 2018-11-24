@@ -1,8 +1,10 @@
-## VoLTE/VoWIFI Enabler for HTC U11/U12+ (german providers) 
+## VoLTE/VoWIFI Enabler for HTC U11(+)/U12+ (german providers) 
 
 This modules enables Voice over LTE (VoLTE) and Wifi-Calling (VoWIFI) for the HTC U11/U12+ on german providers (Deutsche Telekom, Vodafone DE, o2/E-Plus). 
 
-By default, the HTC U12+ (and partially the U11) does not ship with support for VoLTE/VoWifi for german providers. Works with the WWE/Europe-Version of the phones.
+By default, the HTC U11+/U12+ (and partially the U11) does not ship with support for VoLTE/VoWifi for german providers. Works with the WWE/Europe-Version of the phones.
+
+Tested with HTC U12+ (DTAG / E-Plus / O2).
 
 ### Changes
 
