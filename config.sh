@@ -108,7 +108,7 @@ device_check() {
   fi
 }
 
-if !device_check "htc_imedugl" || !device_check "htc_ocnuhl" || !device_check "htc_ocndugl" || !device_check "htc_ocmdugl" || !device_check "htc_ocmuhl"; then
+if !device_check "htc_imeuhl" || !device_check "htc_imedugl" || !device_check "htc_ocnuhl" || !device_check "htc_ocndugl" || !device_check "htc_ocmdugl" || !device_check "htc_ocmuhl"; then
   ui_print "This mod can only be used on the HTC U11(+) or U12+! Aborting!"
   $BOOTMODE || recovery_cleanup
   rm -rf $TMPDIR
