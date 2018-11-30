@@ -109,8 +109,6 @@ device_check() {
 }
 
 if !device_check "htc_imeuhl" && !device_check "htc_imedugl" && !device_check "htc_ocnuhl" && !device_check "htc_ocndugl" && !device_check "htc_ocmdugl" && !device_check "htc_ocmuhl"; then
-  ui_print "This mod can only be used on the HTC U11(+) or U12+! Aborting!"
-  abort()
-  exit 1
+  abort "This mod can only be used on the HTC U11(+) or U12+! Aborting!"
 fi
 
