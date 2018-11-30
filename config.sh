@@ -40,10 +40,10 @@ LATESTARTSERVICE=false
 # Set what you want to show when installing your mod
 
 print_modname() {
-  ui_print "********************************"
-  ui_print "  VoLTE/VoWIFI on HTC U11/U12+  " 
-  ui_print "          Magisk Module         "
-  ui_print "********************************"
+  ui_print "***********************************"
+  ui_print "  VoLTE/VoWIFI on HTC U11(+)/U12+  " 
+  ui_print "          Magisk Module            "
+  ui_print "***********************************"
 }
 
 ##########################################################################################
@@ -99,4 +99,19 @@ set_permissions() {
 # update-binary. Refrain from adding code directly into update-binary, as it will make it
 # difficult for you to migrate your modules to newer template versions.
 # Make update-binary as clean as possible, try to only do function calls in it.
+
+device_check() {
+  if [ "$(grep_prop ro.product.device)" == "$1" ] || [ "$(grep_prop ro.build.product)" == "$1" ]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+if !device_check "htc_imedugl" || !device_check "htc_ocnuhl" || !device_check "htc_ocndugl" || !device_check "htc_ocmdugl" || !device_check "htc_ocmuhl"; then
+  ui_print "This mod can only be used on the HTC U11(+) or U12+! Aborting!"
+  $BOOTMODE || recovery_cleanup
+  rm -rf $TMPDIR
+  exit 1
+fi
 
